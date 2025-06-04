@@ -4,15 +4,15 @@ general:
   csv_name: instances.csv
 data:
   num_outputs: 200
-  start: 74  # Subject to change.
-  end: 98
+  start: 0
+  end: 10
 model:
   onnx_optimization_flags: merge_bn
 attack:
   pgd_order: middle
-  pgd_restarts: 10
+  pgd_restarts: 2
 solver:
-  batch_size: 256
+  batch_size: 128
   beta-crown:
     lr_alpha: 0.05
     lr_beta: 0.1
