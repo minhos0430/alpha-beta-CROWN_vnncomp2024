@@ -1,12 +1,12 @@
-# Configuration file for running specific tllverifybench instances.
+# Configuration file for running specific tllverifybench instances with a timeout.
 general:
   root_path: ../../vnncomp2023_benchmarks/benchmarks/tllverifybench
   csv_name: instances.csv
   enable_incomplete_verification: False
 
-# Add this section to select specific instances
+# Add this section to select specific instances by their 0-indexed line number.
 data:
-  select_instance: [5, 18] # Example: running instances from lines 6 and 19
+  select_instance: [0, 31] # Example: running three specific instances.
 
 model:
   onnx_optimization_flags: merge_linear
@@ -17,6 +17,7 @@ solver:
   bound_prop_method: forward+backward
 
 bab:
+  timeout: 120  # Added: Timeout in seconds for each instance.
   branching:
     method: naive
     input_split:
