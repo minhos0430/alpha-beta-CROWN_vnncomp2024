@@ -1,8 +1,7 @@
 # Configuration file for running the ACASXu benchmark (all properties).
 general:
   root_path: ../../vnncomp2023_benchmarks/benchmarks/acasxu  # Please clone the vnncomp2023 repo first as it contains the benchmark.
-  onnx_path: NNet/ACASXU_run2a_5_5_batch_2000.onnx
-  timeout: 300
+  csv_name: instances.csv
   enable_incomplete_verification: False
 solver:
   batch_size: 16384  # Number of parallel domains to compute on GPU.
