@@ -6,7 +6,7 @@ general:
 
 data:
   # Running instances 10, 25, 33, and 48 as an example.
-  select_instance: [41, 86, 131, 176] 
+  select_instance: [40, 85, 130, 175] 
 
 solver:
   batch_size: 16384
