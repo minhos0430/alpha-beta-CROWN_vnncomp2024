@@ -1,18 +1,23 @@
-# Configuration file for running the tllverifybench benchmark (all properties).
+# Configuration file for running specific tllverifybench instances.
 general:
   root_path: ../../vnncomp2023_benchmarks/benchmarks/tllverifybench
   csv_name: instances.csv
   enable_incomplete_verification: False
+
+# Add this section to select specific instances
+data:
+  select_instance: [5, 18] # Example: running instances from lines 6 and 19
+
 model:
   onnx_optimization_flags: merge_linear
   cache_onnx_conversion: True
+
 solver:
-  batch_size: 1500  # Number of parallel domains to compute on GPU.
+  batch_size: 1500
   bound_prop_method: forward+backward
+
 bab:
   branching:
     method: naive
     input_split:
       enable: True
-      # enable_clip_domains: True
-      # reorder_bab: True
