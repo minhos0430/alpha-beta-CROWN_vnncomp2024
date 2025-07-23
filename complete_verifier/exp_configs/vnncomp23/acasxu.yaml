@@ -1,6 +1,6 @@
 # Configuration file for running the ACASXu benchmark.
 general:
-  root_path: ../../vnncomp2023_benchmarks/benchmarks/acasxu
+  root_path: ../../vnncomp2024_benchmarks/benchmarks/acasxu
   csv_name: instances.csv
   enable_incomplete_verification: False
 
