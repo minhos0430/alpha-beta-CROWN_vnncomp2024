@@ -1,6 +1,6 @@
 # Configuration file for running specific tllverifybench instances with a timeout.
 general:
-  root_path: ../../vnncomp2024_benchmarks/benchmarks/tllverifybench
+  root_path: ../../vnncomp2024_benchmarks/benchmarks/tllverifybench_2023
   csv_name: instances.csv
   enable_incomplete_verification: False
 
