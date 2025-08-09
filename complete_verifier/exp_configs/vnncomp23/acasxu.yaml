@@ -1,26 +1,18 @@
-# Configuration file for running the ACASXu benchmark.
+# Configuration file for running the ACASXu benchmark (all properties).
 general:
-  root_path: ../../vnncomp2024_benchmarks/benchmarks/acasxu_2023
+  root_path: ../../vnncomp2023_benchmarks/benchmarks/acasxu  # Please clone the vnncomp2023 repo first as it contains the benchmark.
   csv_name: instances.csv
   enable_incomplete_verification: False
-
-data:
-  # Running instances 10, 25, 33, and 48 as an example.
-  select_instance: [40, 85, 130, 175] 
-
 solver:
-  batch_size: 16384
+  batch_size: 16384  # Number of parallel domains to compute on GPU.
   bound_prop_method: crown
-
 bab:
-  timeout: 120  # Timeout in seconds for each instance.
   branching:
-    method: naive
+    method: naive  # Split on input space.
     input_split:
       enable: True
       enable_clip_domains: True
       reorder_bab: True
-
 attack:
   pgd_order: after
   pgd_restarts: 10000
