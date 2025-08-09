@@ -1,5 +1,5 @@
 general:
-  root_path: ../../vnncomp2023_benchmarks/benchmarks/vit
+  root_path: ../../vnncomp2024_benchmarks/benchmarks/vit
   csv_name: instances.csv
   loss_reduction_func: min
   sparse_alpha: false

@@ -1,5 +1,5 @@
 general:
-  root_path: ../../vnncomp2023_benchmarks/benchmarks/cgan
+  root_path: ../../vnncomp2024_benchmarks/benchmarks/cgan_2023
   csv_name: instances.csv
   conv_mode: matrix
 model:
